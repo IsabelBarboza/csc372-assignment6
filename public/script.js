@@ -49,7 +49,7 @@ async function addJoke(event) {
     event.preventDefault();
     const form = new FormData(id("joke-form"));
     const body = JSON.stringify(Object.fromEntries(form));
-    const res = await fetch(BASE_URL+"/joke/add", {
+    const res = await fetch(BASE_URL+"/add", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body

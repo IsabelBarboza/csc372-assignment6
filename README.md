@@ -12,19 +12,27 @@ Features:
 
 ## Database
 
-CREATE TABLE jokebook (
-    id SERIAL PRIMARY KEY,
-    category VARCHAR(50) NOT NULL,
-    setup TEXT NOT NULL,
-    delivery TEXT NOT NULL
+
+CREATE TABLE categories (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) UNIQUE NOT NULL
 );
 
-INSERT INTO jokebook (category, setup, delivery) VALUES
-('funnyJoke', 'Why did the student eat his homework?', 'Because the teacher told him it was a piece of cake!'),
-('funnyJoke', 'What kind of tree fits in your hand?', 'A palm tree'),
-('funnyJoke', 'What is worse than raining cats and dogs?', 'Hailing taxis'),
-('lameJoke', 'Which bear is the most condescending?', 'Pan-DUH'),
-('lameJoke', 'What would the Terminator be called in his retirement?', 'The Exterminator');
+
+CREATE TABLE jokebook (
+  id SERIAL PRIMARY KEY,
+  setup TEXT NOT NULL,
+  delivery TEXT NOT NULL,
+  category VARCHAR(50) NOT NULL  
+);
+
+INSERT INTO categories (name) VALUES ('funnyJoke'), ('lameJoke');
+
+INSERT INTO jokebook (setup, delivery, category) VALUES
+('Why did the student eat his homework?', 'Because the teacher told him it was a piece of cake!', 'funnyJoke'),
+('What kind of tree fits in your hand?', 'A palm tree', 'funnyJoke'),
+('Which bear is the most condescending?', 'Pan-DUH', 'lameJoke'),
+('What would the Terminator be called in his retirement?', 'The Exterminator', 'lameJoke');
 
 ## Setup
 - Clone this repo
