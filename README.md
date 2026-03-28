@@ -46,6 +46,12 @@ Method	Endpoint	                Description
 GET	   /jokebook/categories	        List all categories
 GET	   /jokebook/category/:category	List jokes in a category
 GET	   /jokebook/random	            Get a random joke
-POST   /jokebook/joke/add	        Add a joke
+POST   /jokebook/add	        Add a joke
 
 ## Demo Video:
+
+https://uncg-my.sharepoint.com/:v:/g/personal/idbarbozate_uncg_edu/IQB7vB0qGSE5RLOmIg0G1lRFAflLEWOTb3-d4SMWfE5yOC8?e=Ew5iDV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+
+
+In case the link above does not work :  https://uncg-my.sharepoint.com/:v:/g/personal/idbarbozate_uncg_edu/IQB7vB0qGSE5RLOmIg0G1lRFAflLEWOTb3-d4SMWfE5yOC8?e=mavjgk
